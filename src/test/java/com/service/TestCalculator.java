@@ -10,7 +10,7 @@ public class TestCalculator {
 
         if(calc.add() != 2) throw new AssertionError(exceptionMessage);
 
-        if(calc.substract() != 0) throw new AssertionError(exceptionMessage);
+        if(calc.subtract() != 0) throw new AssertionError(exceptionMessage);
 
         if(calc.multiply() != 1) throw new AssertionError(exceptionMessage);
 

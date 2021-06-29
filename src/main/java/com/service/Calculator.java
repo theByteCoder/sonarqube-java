@@ -13,7 +13,7 @@ class Calculator {
         return numOne + numTwo;
     }
 
-    public int substract() {
+    public int subtract() {
         if(numTwo > numOne) {
             return numTwo - numOne;
         }
