@@ -3,8 +3,7 @@
 ## Setup
 
 * Install docker
-* Run command
-  docker-compose up
+* Run command "docker-compose up"
 * Setup Jenkins and SonarQube
 * Create SonarQube webhook and add quality gates
 * Create Jenkins Pipeline
@@ -12,12 +11,10 @@
 
 ## Troubleshooting
 
-* For below error
+* What went wrong: Task 'sonarqube' not found in root project 'sonarqube-java'.
 
-  + ./gradlew sonarqube
-  /var/jenkins_home/workspace/sonarqube-code-coverage@tmp/durable-8c7abd6c/script.sh: 1: /var/jenkins_home/workspace/sonarqube-code-coverage@tmp/durable-8c7abd6c/script.sh: ./gradlew: Permission denied
+  Solution - Run command "git update-index --chmod=+x gradlew"
+  
+* What went wrong: Execution failed for task ':sonarqube'. > Not authorized. Analyzing this project requires authentication. Please provide a user token in sonar.login or other credentials in sonar.login and sonar.password.
 
-
-  Run command
-  git update-index --chmod=+x gradlew
-
+  Solution - Go to sonarqube web page, then go to administration, after that go to security and disable "Force User Authentication".
