@@ -2,7 +2,7 @@ package com.service;
 
 class Calculator {
 
-    int numOne, numTwo;
+    int numOne, numTwo, NUM_THREE;
 
     Calculator(int numOne, int numTwo) {
         this.numOne = numOne;

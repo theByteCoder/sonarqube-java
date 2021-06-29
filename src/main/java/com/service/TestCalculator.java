@@ -2,6 +2,12 @@ package com.service;
 
 public class TestCalculator {
 
+    TestCalculator() {
+        System.out.println("Bad code");
+    }
+
+    int Un_UsedOne = 1, Un_UsedTwo = 2;
+
     public static void main(String[] args) {
 
         String exceptionMessage = "Unexpected result";
