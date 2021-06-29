@@ -2,8 +2,7 @@ package com.service;
 
 class Calculator {
 
-    int numOne;
-    int numTwo;
+    int numOne, numTwo;
 
     Calculator(int numOne, int numTwo) {
         this.numOne = numOne;
